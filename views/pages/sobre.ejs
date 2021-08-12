@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head'); %>
+
+<body>
+    
+    <%- include('../partials/header'); %>
+    
+    <main>
+        <h1>Página sobre</h1>
+        <p>Lorem ipsum sit amet</p>
+    </main>
+
+    <ul>
+        <% qualitys.forEach((quality) => {%>
+            <li><stron><%= quality.title %></strong> <%= quality.message %></li>
+        <%})%>
+    </ul>
+
+    <%- include('../partials/footer'); %>
+    
+</body>
+</html>
